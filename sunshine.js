@@ -25,7 +25,10 @@ function reverseString(str) {
   Then convert the array to a string and return it.
 */
 function spliceString(str, char) {
+  var result = str[str.length - 1]+ str.slice(0,-1);
+  result = result.slice(0,-1) + char + result[result.length-1];
 
+  return result;
 }
 
 /**
