@@ -5,13 +5,7 @@
   Bonus: Use RegEx to create the array
 */
 function reverseString(str) {
-  var result = "";
-
-  charArray = str.split("");
-
-  reversedArray = charArray.reverse();
-
-  result = reversedArray.join("");
+  var result = str.split("").reverse().join("");
 
   return result;
 }
@@ -39,5 +33,9 @@ function spliceString(str, char) {
   Instead of "ickenchay", it should just become "hickencay".
 */
 function speakPigLatin(strArray) {
-
+  var resultArray = strArray.map(function(str) {
+    var result = str.slice(1,str.length) + str[0] + "ay";
+    return result;
+  });
+  return resultArray;
 }
