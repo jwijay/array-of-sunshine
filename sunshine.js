@@ -5,7 +5,15 @@
   Bonus: Use RegEx to create the array
 */
 function reverseString(str) {
+  var result = "";
 
+  charArray = str.split("");
+
+  reversedArray = charArray.reverse();
+
+  result = reversedArray.join("");
+
+  return result;
 }
 
 /**
